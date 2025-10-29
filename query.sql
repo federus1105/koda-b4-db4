@@ -2,7 +2,7 @@ CREATE TABLE user (
     id SERIAL PRIMARY KEY, 
     email VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(20) NOT NULL,
-    id_account INT NOT NULL
+    id_account INT NOT NULL,
     Foreign Key (id_account) REFERENCES account(id)
 );
 
